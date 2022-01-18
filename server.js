@@ -17,12 +17,12 @@ function getTextLines(path){
   return lines;
 }
 // App config
-app.use(express.static('data/img'));
+
 app.engine('handlebars', engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 app.set('views', "./views");
 
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 app.get('/writing/:writing', (req, res, next) => {

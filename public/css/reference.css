@@ -1,0 +1,163 @@
+
+
+/* unvisited link */
+a:link {
+  color: var(--dodger_blue4);
+  text-shadow: 0 0 4px var(--dodger_blue4);
+}
+
+/* visited link */
+a:visited {
+  color: var(--dark_orchid2);
+  text-shadow: 0 0 4px var(--dark_orchid2);
+}
+
+/* mouse over link */
+a:hover {
+  color: var(--green2);
+  text-shadow: 0 0 4px var(--green2);
+}
+
+/* selected link */
+a:active {
+  color: var(--dodger_blue4);
+  text-shadow: 0 0 4px var(--dodger_blue4);
+}
+
+#main-page-title {
+  margin: 0 auto;
+  padding: 0;
+  white-space: pre-wrap;
+  color: var(--grey);
+}
+
+.topl:hover {
+  box-shadow: 0 0 0.2em 0.2em #0ff;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+  margin-top: 0;
+  color: white;
+  font-color: white;
+  font-family: "Cantarell", Sans-Serif;
+  font-size: 0.8em;
+}
+
+#taskbar {
+  width: 100%;
+}
+
+#task-meta {
+  width: 75%;
+  padding: 0;
+  margin: auto;
+  margin-top: auto;
+  background-color: rgba(200,200,200,0.2);
+  border: 0.1em solid white;
+  text-align: center;
+}
+
+#taskbar div {
+  display: inline-block;
+  zoom: 1;
+  width: 19%;
+  text-align:center;
+  margin: auto;
+  margin-top: auto;
+  margin-bottom: 5%;
+  padding: 0;
+}
+
+
+
+#task-meta hr {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+.taskimg {
+  width: 40%;
+  height: 40%;
+  transition: transform 0.3s;
+}
+
+.taskimg:hover {
+  transform: scale(1.5);
+}
+
+.twin {
+  border: 1.5em solid transparent;
+  border-image: url(../res/2008.png) 19 12 round;
+  padding: 0;
+  /* positioning */
+  margin: 0 auto;
+  margin-top: 75px;
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0.85);
+
+}
+
+.tcontent {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.twin p {
+  margin: 0 auto;
+  padding: 0;
+  white-space: pre-wrap;
+  color: var(--white);
+  text-shadow: 0 0 4px var(--white);
+}
+
+.prompt1 {
+  color: var(--bisque4);
+  text-shadow: 0 0 4px var(--bisque4);
+}
+
+.prompt2 {
+  color: var(--blue);
+  text-shadow: 0 0 4px var(--blue);
+}
+
+.prompt3 {
+  color: var(--yellow);
+  text-shadow: 0 0 4px var(--yellow);
+}
+
+.prompt4 {
+  font-weight: bold;
+  text-shadow: 0 0 4px var(--white);
+}
+
+h2 {
+  color: var(--spring_green);
+  font-size: 26pt;
+}
+
+body {
+  background-color: #2d6189;
+  /*background-image: url('../res/back.jpg');*/
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Hasklig", "Inconsolata", "Courier New", monospace;
+  font-size: 1.1em;
+  -webkit-font-smoothing : none;
+  -moz-font-smoothing: never;
+}
+
+.fttr {
+  margin-top: auto;
+  margin: auto;
+  margin-top: 75px;
+  width: 75%;
+}
