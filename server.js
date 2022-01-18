@@ -25,19 +25,17 @@ app.set('views', "./views");
 //app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-
+app.get('/writing/:writing', (req, res, next) => {
+  let writing = req.params.writing.toLowerCase();
+  res.status(200).render('writing',{text:getTextLines("writing/"+writing)});
+});
 // index.html should be before 404 and after everything else
 
 
 app.get('/', (req, res, next) => {
   res.status(200).render('index');
 });
-app.get('/writings/:writing', (req, res, next) => {
-  let writing = req.params.writing.toLowerCase();
-  console.log(writing);
-  res.status(200).render('writings',{text:getTextLines(writing)});
-}
-);
+
 // 404 is last.
 app.get('*', (req, res) => {
   res.status(404).render('404');
