@@ -17,7 +17,7 @@ function getTextLines(path){
   return lines;
 }
 // App config
-
+app.use(express.static('res'));
 app.engine('handlebars', engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 app.set('views', "./views");
