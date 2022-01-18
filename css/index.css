@@ -1,5 +1,7 @@
 body{
   font-family: 'Quattrocento', serif;
+  background: rbg(0,0,0);
+  color: rgb(255,255,255);
 }
 .headerimg{
   display: block;
