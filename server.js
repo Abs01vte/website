@@ -32,7 +32,7 @@ app.use(express.json());
 app.get('/', (req, res, next) => {
   res.status(200).render('index');
 });
-app.get('/:writing', (req, res, next) => {
+app.get('/writings/:writing', (req, res, next) => {
   let writing = req.params.writing.toLowerCase();
   console.log(writing);
   res.status(200).render('writings',{text:getTextLines(writing)});
