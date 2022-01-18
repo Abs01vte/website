@@ -29,6 +29,9 @@ app.get('/writing/:writing', (req, res, next) => {
   let writing = req.params.writing.toLowerCase();
   res.status(200).render('writing',{text:getTextLines("writing/"+writing)});
 });
+app.get('/writing', (req,res,next)=>{
+  res.status(200).render('indexWriting');
+});
 // index.html should be before 404 and after everything else
 
 
