@@ -3,6 +3,7 @@ body{
   background-color: #353D60;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  color: #FFD339;
 }
 .headerimg{
   display: block;
