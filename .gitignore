@@ -2,6 +2,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/vim,django
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,django
 
+reference.html
+css/reference.css
+res/
+
 ### Django ###
 *.log
 *.pot
