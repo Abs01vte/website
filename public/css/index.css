@@ -6,7 +6,7 @@ body{
   color: #FFD339;
   margin-left: auto;
   margin-right: auto;
-  width: 16em;
+  width: 32em;
 }
 .headerimg{
   display: block;
@@ -16,7 +16,7 @@ body{
   height: auto;
 }
 #topline{
-  margin-left: -6.5em;
+  margin-left: 0em;
   width:75%;
   display:flex;
   height:200px;
@@ -26,9 +26,12 @@ body{
   max-height: 4em;
 }
 .images{
-  margin-left: -6.5em;
-  margin-right: auto;
+  display:block;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-left: -2em;
+  margin-right: -2em;
   width: auto;
   height: auto;
-  text-align: center;
+  float: left;
 }
