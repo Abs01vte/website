@@ -4,6 +4,9 @@ body{
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   color: #FFD339;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
 }
 .headerimg{
   display: block;
