@@ -11,7 +11,12 @@ function getTextLines(path){
   let lines = [];
   const contents = fs.readFileSync(path,"utf8");
   contents.split(/\r?\n/).forEach((data, i) => {
-    lines.push({line:data});
+
+    if(data == ""){
+      lines.push({line:"<br>"});
+    } else{
+      lines.push({line:data});
+    }
   });
 
   return lines;
