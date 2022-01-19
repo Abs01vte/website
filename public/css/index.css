@@ -23,5 +23,8 @@ body{
 }
 .toplinkimage{
   max-width: 4em;
-  max-height: 4em;  
+  max-height: 4em;
+}
+.images{
+  margin-left: -6.5em;
 }
