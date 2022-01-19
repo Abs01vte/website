@@ -37,6 +37,9 @@ app.get('/writing/:writing', (req, res, next) => {
 app.get('/writing', (req,res,next)=>{
   res.status(200).render('indexWriting');
 });
+app.get('/sales', (req,res,next)=>{
+  res.status(200).render('bookSales');
+});
 // index.html should be before 404 and after everything else
 
 
