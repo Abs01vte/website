@@ -47,7 +47,9 @@ app.get('/art', (req,res,next)=>{
 
 
 app.get('/', (req, res, next) => {
-  res.status(200).render('index');
+  res.status(200).render('index',{
+    writtenword:fs.readFileSync('writing/writtenword.html')
+  });
 });
 
 // 404 is last.
