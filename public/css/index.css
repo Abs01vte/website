@@ -35,6 +35,15 @@ body{
   height: auto;
   float: left;
 }
+.photos{
+  display:block;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 800px;
+  float: left;
+}
 h1{
   color: #FFD339;
   background-color: #2F2F2F;

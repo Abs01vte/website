@@ -40,9 +40,23 @@ app.get('/writing', (req,res,next)=>{
 app.get('/sales', (req,res,next)=>{
   res.status(200).render('bookSales');
 });
+app.get('/art/:art', (req,res,next)=>{
+  let art = req.params.art.toLowerCase();
+  let artPath = path.join("art/", art)
+  if(fs.existsSync(artPath)){
+    res.status(200).render(
+      'art',
+      {art:fs.readFileSync(artPath, "utf8")}
+    );
+  } else{
+    res.status(404).render('404');
+  }
+
+});
 app.get('/art', (req,res,next)=>{
   res.status(200).render('indexArt');
 });
+
 // index.html should be before 404 and after everything else
 
 
