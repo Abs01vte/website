@@ -26,7 +26,6 @@ function getTextLines(path){
 app.engine('handlebars', engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 app.set('views', "./views");
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
@@ -35,11 +34,14 @@ app.get('/writing/:writing', (req, res, next) => {
   res.status(200).render('writing',{text:getTextLines("writing/"+writing)});
 });
 app.get('/writing', (req,res,next)=>{
-  res.status(200).render('indexWriting');
+  res.status(200).render('indexWriting',{
+    writtenword:fs.readFileSync('writing/writtenword.html')
+  }, {format: 'main'});
 });
 app.get('/sales', (req,res,next)=>{
   res.status(200).render('bookSales');
 });
+
 app.get('/art/:art', (req,res,next)=>{
   let art = req.params.art.toLowerCase();
   let artPath = path.join("art/", art)
@@ -56,15 +58,14 @@ app.get('/art/:art', (req,res,next)=>{
 app.get('/art', (req,res,next)=>{
   res.status(200).render('indexArt');
 });
+app.get('/', (req, res, next) => {
+  res.status(200).render('index');
+});
+
 
 // index.html should be before 404 and after everything else
 
 
-app.get('/', (req, res, next) => {
-  res.status(200).render('index',{
-    writtenword:fs.readFileSync('writing/writtenword.html')
-  });
-});
 
 // 404 is last.
 app.get('*', (req, res) => {

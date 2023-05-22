@@ -4,5 +4,27 @@
     "express-handlebars": "^6.0.2",
     "express-hbs": "^2.4.0",
     "handlebars": "^4.7.7"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "foxandraven",
+  "description": "www.kylemcd.xyz Check it out!",
+  "version": "1.0.0",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abs01vte/website.git"
+  },
+  "author": "Kyle McDermott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abs01vte/website/issues"
+  },
+  "homepage": "https://github.com/Abs01vte/website#readme"
 }
