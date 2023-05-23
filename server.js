@@ -34,7 +34,7 @@ app.get('/writing/:writing', (req, res, next) => {
   res.status(200).render('writing',{text:getTextLines("writing/"+writing)});
 });
 app.get('/writing', (req,res,next)=>{
-  res.status(200).render('indexWriting',{
+  res.status(200).render('indexWriting.html',{
     writtenword:fs.readFileSync('writing/writtenword.html')
   }, {format: 'main'});
 });
