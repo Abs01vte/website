@@ -1,0 +1,68 @@
+const stories = [
+	{
+	title: "Daydreamin' (2019)" 
+	filename: "daydreamin.html" 
+	 },
+	{
+	title: "Who Is It Good For? (2023)" 
+	filename:"whoisitgoodfor.html?" 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	description: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title: 
+	filename: 
+	 },
+	{
+	title:  
+	filename: 
+	 }
+];
+

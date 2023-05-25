@@ -16,7 +16,6 @@
     "lib": "lib",
     "test": "test"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Abs01vte/website.git"
